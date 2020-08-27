@@ -1,0 +1,209 @@
+//Custom Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.button:focus {
+  outline: none;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+textarea:focus, input:focus,button:focus{
+  outline: none;
+}
+
+input{
+  border-radius: 20px;
+  width:200px;
+  height:40px;
+  margin-top: 40px;
+  background-color: transparent;
+color:black;
+border-color: cadetblue;
+}
+
+//Login Main Container
+.login {
+  width: 27em;
+  height: 37em;
+  //min-height: 44em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 99;
+  background-color: transparent;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#5585A6 ;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+    border-radius: 4px;
+    position: relative;
+    z-index: 99;
+    color:white;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    padding: 17px 10px;
+    //transition: transform 200ms ease-in-out;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    background-color: #D6EAF8 ;
+    width: 100%;
+    position: absolute;
+    right: -34%;
+    color:black;
+    font-size: x-large;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+
+    &.right {
+
+      right: -40%;
+      align-items: flex-end;
+      &:hover {
+        right: -45%;
+      }
+    }
+    &.left {
+      right: 40%;
+      align-items: flex-start;
+      &:hover {
+        right: 45%;
+      }
+    }
+
+    .text {
+      font-size: 21px;
+      font-weight: 500;
+      color: black;
+      margin-right: 3em;
+      margin-left: 3em;
+    }
+  }
+}
+
+.logout{
+  width:400px;
+  height:400px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:30px;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.request{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.submitButton{
+  width: 200px;
+  height:50px;
+  color:white;
+  margin-top: 30px;
+  background-color: #5585A6;
+  text-align: center;
+  border-radius: 20px;
+}
+*:focus{
+  outline: none;
+}
+
+.modal-close{
+ position: absolute;
+ right:5px;
+ top:5px;
+ color:black;
+ background-color: crimson;
+}
+.form1{
+  width: 600px;
+  height:550px;
+  margin:auto;
+  color:white;
+  background-color: #5585A6;
+  box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-group1{
+  text-align: center;
+}
+.form-group{
+  margin-bottom: 10px;
+  padding:15px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+
+
+
+.header{
+  margin-bottom: 50px;
+  font-size: large;
+}
+//Button
+.btn {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #2386c8;
+  }
+  &:focus {
+    outline:none;
+  }
+}
